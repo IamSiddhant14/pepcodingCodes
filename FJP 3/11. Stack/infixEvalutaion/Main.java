@@ -42,7 +42,7 @@ public static void main(String[] args) throws Exception {
     Stack<Character> operator = new Stack<>();
     Stack<Integer> operand = new Stack<>();
     
-    for(int i = 0; i<exp.length(); i++){
+    for(char ch : exp.tocharArray()){
         char ch = exp.charAt(i);
         
         if(ch == '('){
